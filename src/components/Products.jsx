@@ -234,7 +234,7 @@ const Products = () => {
                   <h1 className="font-Poppins text-[18px] font-medium mx-2">
                     Search your queries realted to this product
                   </h1>
-                  <div className="flex flex-row items-center relative">
+                  <div className="flex flex-row items-center relative w-full max-w-[491px]">
                     <input
                       type="text"
                       className=" h-[61px] w-[491px] border outline-none bg-[#DCDCDC] text-[18px] ml-2 pl-16 font-Poppins  "
@@ -338,7 +338,7 @@ const ProductsDetailsSection = () => {
         </div>
       ) : null}
       {active == 2 ? (
-        <div className="flex flex-row mx-14 my-10 gap-3">
+        <div className="flex flex-row mx-4 md:mx-14 my-10 md:gap-6">
           <div className="w-[562px] h-[195px]">
             <div>
               <label className="font-medium">Technical Specification</label>
