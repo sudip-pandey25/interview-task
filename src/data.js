@@ -22,7 +22,7 @@ export const productData = [
     ],
     image_Url: [
       {
-        url: "https://s3-alpha-sig.figma.com/img/7123/e494/8a280d8510b14f00cbae2555d3589c8b?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RS0GOp0IeJ5HK3OVihfxYLzuDIJwbQ7BoGlq6swhfRV1JfJJOyMlbX-Hz0-SJ6WIzYIJJk2AB-T5SuZ8Mqob5yY8wq~7NJzdfJvQGzO2-9pLrb48Yx2tFBlacMaU4-x2-xjtDr0382hr2U-zNPj4QyrgbG6yYIB4N~QTL0hEuDU3krHhWKcZhjYJNR8ljFowXGM4476ADQv0V5aE8b1MLiCkZRd~4Ct7~TUNt010ZZcY8QgyHlloR5Li5ok84dMCsl2WEthAthxnc9Rk2bfWRM3gXPQvn3FzMF2Syfp~wc4kq-i4LPxEIegEj-Oz1QKj9YQiEq8mEaD6io4QWWKIfw__",
+        url: "../public/Rectangle 4.jpg",
       },
       {
         url: "https://cdn.shopify.com/s/files/1/0044/1208/0217/files/EMPIRE-SAMPLE-RDB-SRB-rattan-dark-brown_900x.jpg?v=1718878469",
