@@ -22,7 +22,7 @@ export const productData = [
     ],
     image_Url: [
       {
-        url: "../public/Rectangle 4.jpg",
+        url: "/Rectangle 4.jpg",
       },
       {
         url: "https://cdn.shopify.com/s/files/1/0044/1208/0217/files/EMPIRE-SAMPLE-RDB-SRB-rattan-dark-brown_900x.jpg?v=1718878469",
