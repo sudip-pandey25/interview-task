@@ -15,8 +15,8 @@ const Products = () => {
   const [color, setColor] = useState(0);
 
   return (
-    <div className="bg-white mx-4 mt-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+    <div className="bg-white mx-12 mt-2 2xl:ml-[95px] 2xl:mt-[91px]  ">
+      <div className="grid grid-cols-1 w-auto md:grid-cols-1 mt-10 ml-3 gap-8 lg:grid-cols-2 xxxl:gap-[134px]  2xl:max-w-[1587px]">
         {/* Left Section: Product Images */}
         <div className="flex flex-col items-center gap-4">
           {productData.map((product, index) => (
@@ -27,7 +27,7 @@ const Products = () => {
               <img
                 src={product.image_Url?.[select]?.url}
                 alt=""
-                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] sm:w-[300px] sm:h-[300px] xl:w-[593px] xl:h-[593px] object-cover transition-opacity duration-500 ease-in-out"
+                className="w-[300px] h-[300px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] sm:w-[300px] sm:h-[300px] xxxl:w-[593px] xxxl:h-[593px] object-cover transition-opacity duration-500 ease-in-out rounded-2xl "
               />
               <div className="flex flex-row justify-between gap-2 md:gap-6">
                 <div
@@ -92,14 +92,14 @@ const Products = () => {
         </div>
 
         {/* Right Section: Product Details */}
-        <div className="content">
+        <div className="content w-auto">
           {productData.map((product, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 gap-8 md:justify-center"
+              className="grid grid-cols-1 w-auto gap-6 xxxl:gap-0 md:justify-center"
             >
               {/* Product Title */}
-              <h1 className="text-2xl md:text-[36px] font-[400] md:leading-[50px] font-Questrial">
+              <h1 className="text-2xl w-auto lg:text-[28px] xxxl:text-[32px] font-[400] 2xl:leading-[50px] font-Questrial  ">
                 {product.name}
                 <span className="ml-2 text-xs bg-black text-white px-2 py-1 rounded-full inline-block align-middle">
                   #1 IN CHAIRS
@@ -108,7 +108,7 @@ const Products = () => {
 
               {/* Wishlist Button */}
               <div
-                className="flex justify-end  "
+                className="flex justify-end xxxl:mb-[14px] "
                 onClick={() => setClick(!click)}
               >
                 <button className="text-[#B8134E] flex items-center gap-2 px-3 py-1 bg-[#B8134E] bg-opacity-25 rounded-full font-medium hover:scale-105 transition-all duration-300">
@@ -118,8 +118,8 @@ const Products = () => {
               <hr />
 
               {/* Options */}
-              <div className="flex flex-col gap-3  ">
-                <p className="font-light text-[18px]">
+              <div className="flex flex-col gap-3 xxxl:mt-[14px] xxxl:mb-[26px] ">
+                <p className="font-light xxl:text-[18px]">
                   <span className="font-medium">Options:</span>{" "}
                   {product.options[color]}
                 </p>
@@ -146,12 +146,12 @@ const Products = () => {
               <hr />
 
               {/* Pricing and Quantity */}
-              <div className="flex flex-col gap-4 font-Poppins">
-                <p className="text-gray-400 text-center md:text-left md:text-[18px] line-through">
+              <div className="flex flex-col gap-4 font-Poppins xxxl:mt-[26px] xxxl:mb-[70px] ">
+                <p className="text-gray-400 text-center md:text-left lg:text-[14px] xxl:text-[18px] line-through">
                   NRs. {product.OriginalAmount}
                 </p>
                 <div className="flex flex-col md:flex-row justify-between items-center gap-3">
-                  <h1 className=" text-3xl md:text-[48px] font-[400] md:leading-[65px] ">
+                  <h1 className=" text-3xl lg:text-[40px] md:text-[48px] font-[400] xxxl:leading-[65px] ">
                     NRs. {product.discountAmount}
                   </h1>
                   <div className="flex flex-row items-center gap-4">
@@ -186,14 +186,14 @@ const Products = () => {
 
               {/* Description */}
               <div>
-                <h2 className="text-[24px] font-[400] font-Poppins text-center md:text-left">
+                <h2 className="text-[24px] font-[400] font-Poppins text-center md:text-left xxxl:mt-[70px] xxxl:mb-[21px] ">
                   About this item:
                 </h2>
                 <ul className="list-disc ml-6">
                   {product.description.map((desc, descIndex) => (
                     <li
                       key={descIndex}
-                      className="text-lg lg:text-[18px] lg:leading-[47px] text-gray-700 "
+                      className="text-lg md:leading-10 lg:text-[18px] lg:leading-[38px] xxxl:leading-[47px] text-gray-700 "
                     >
                       {desc.des}
                     </li>
@@ -202,7 +202,7 @@ const Products = () => {
               </div>
 
               {/* Search Queries */}
-              <div className="flex flex-col items-center lg:items-start gap-2 mt-1 lg:mb-[70px]">
+              <div className="flex flex-col items-center lg:items-start gap-2 mt-1 lg:mb-[35px] xxxl:mt-[21px]">
                 <h2 className="text-lg lg:text-[18px] font-[400] font-Poppins">
                   Search your queries related to this product:
                 </h2>

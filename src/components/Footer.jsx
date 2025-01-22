@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[#181818] text-white font-Poppins overflow-hidden">
+    <div className="bg-[#181818] max-w-auto max-h-auto text-white font-Poppins overflow-hidden">
       <div className="container mx-auto px-6 sm:px-10 lg:px-16 py-8">
         {FooterData.map((footer, index) => (
           <div

@@ -7,7 +7,12 @@ export default {
       Poppins: ["Poppins", "sans-serif"],
       Questrial: ["Questrial", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        mdx: "1366px",
+        xxxl: "1920px",
+      },
+    },
   },
   plugins: [],
 };
